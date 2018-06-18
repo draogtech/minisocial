@@ -70,4 +70,4 @@ mongoose.connect('mongodb://draogtech:masterdare12@ds253840.mlab.com:53840/minis
 });
 
 app.use('/auth', auth.router);
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
